@@ -1,0 +1,13 @@
+.Nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Nav a {
+  font-size: 20px;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
