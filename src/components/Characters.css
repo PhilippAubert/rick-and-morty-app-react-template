@@ -1,13 +1,37 @@
-.Character-Text {
-  text-align: center;
-  font-size: 19px;
-  margin: 20px;
-}
-
 .MoreButton {
-  margin-left: 40%;
   padding: 2%;
   background-color: orange;
   border-radius: 4px 4px 4px 4px;
-  border: 2px solid #0f0;
+  height: 50px;
+  margin-left: 40%;
+}
+
+.Headline-Text {
+  font-size: 20px;
+  text-align: center;
+}
+
+.Character-Grid {
+  width: 45%;
+}
+
+.Character-Image {
+  height: 130px;
+  width: 130px;
+}
+
+.Character-Text {
+  font-size: 15px;
+  width: 100px;
+  color: #0f0;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
