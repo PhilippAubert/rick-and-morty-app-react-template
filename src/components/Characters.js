@@ -1,6 +1,7 @@
 import "./Characters.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import CharactersId from "./CharactersId.js";
 
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -30,14 +31,12 @@ export default function Characters() {
     return characters.map((character) => {
       const { id, name, image } = character;
       return (
-        <div key={id}>
-          <Link to={`/characters/${id}`}>
-            <div class="Character-Grid">
-              <figure>
-                <img className="Character-Image" src={image} alt={name} />
-                <figcaption className="Character-Text">{name}</figcaption>
-              </figure>
-            </div>
+        <div class="Character-Grid" key={id}>
+          <Link onClick={CharactersId} to={`/characters/${id}`}>
+            <figure>
+              <img className="Character-Image" src={image} alt={name} />
+              <figcaption className="Character-Text">{name}</figcaption>
+            </figure>
           </Link>
         </div>
       );
@@ -45,7 +44,7 @@ export default function Characters() {
   }
 
   return (
-    <div>
+    <div className="Viewport">
       <h3>All Rick and Morty Characters</h3>
       <section>{createCharacters()}</section>
       <button className="MoreButton" onClick={handleLoadMore}>
