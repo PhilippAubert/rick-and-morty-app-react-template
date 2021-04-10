@@ -30,13 +30,13 @@ export default function Characters() {
     return characters.map((character) => {
       const { id, name, image } = character;
       return (
-        <div className="Character-Grid" key={id}>
-          <Link to={`/character/${id}`}>
-            <figure>
+        <div className="Character-Grid-Parent">
+          <div className="Character-Grid" key={id}>
+            <Link to={`/character/${id}`}>
               <img className="Character-Image" src={image} alt={name} />
-              <figcaption className="Character-Text">{name}</figcaption>
-            </figure>
-          </Link>
+              <h3 className="Character-Text">{name}</h3>
+            </Link>
+          </div>
         </div>
       );
     });

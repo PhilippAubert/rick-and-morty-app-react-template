@@ -11,24 +11,26 @@
   text-align: center;
 }
 
-.Character-Grid {
-  width: 45%;
+.Character-Grid-Parent {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: start;
+  flex-wrap: wrap;
+  width: 40%;
+}
+
+.Character-Grid {
+  display: flex;
   flex-wrap: wrap;
 }
 
 .Character-Image {
-  height: 130px;
-  width: 130px;
+  width: 30vw;
+  border-radius: 15px;
 }
 
 .Character-Text {
   font-size: 15px;
-  width: 100px;
   color: #0f0;
+  text-align: center;
 }
 
 a {

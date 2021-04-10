@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
+import "./CharactersId.css";
 
 export default function CharactersId() {
   const history = useHistory();
@@ -17,12 +18,17 @@ export default function CharactersId() {
   }, [id]);
 
   return (
-    <div>
-      <h3>{character.name}</h3>
-      <img src={character.image} alt={character.name} />
-      <p>{character.status}</p>
-      <p>{character.species}</p>
-      <button onClick={() => history.goBack()}> Go Back </button>
+    <div className="Single-Character-Frame-Parent">
+      <div className="Single-Character-Frame">
+        <h3 className="Headline">{character.name}</h3>
+        <img className="Photo" src={character.image} alt={character.name} />
+        <p className="Liner-Notes">{character.status}</p>
+        <p className="Liner-Notes">{character.species}</p>
+        <button className="Go-Back-Button" onClick={() => history.goBack()}>
+          {" "}
+          Go Back{" "}
+        </button>
+      </div>
     </div>
   );
 }
