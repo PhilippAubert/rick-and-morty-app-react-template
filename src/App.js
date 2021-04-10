@@ -20,12 +20,12 @@ function App() {
         </header>
         <main className="Main-Grid">
           <Switch>
-            <Route path="/characters">
-              <Characters />
+            <Route path="/characters/:id">
+              <CharactersId />
             </Route>
 
-            <Route path="/characters/id">
-              <CharactersId />
+            <Route path="/characters">
+              <Characters />
             </Route>
 
             <Route path="/">
