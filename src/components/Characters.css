@@ -24,7 +24,16 @@
   margin: 3%;
 }
 
+.Character-Grid-Alive {
+  background-color: #0f0;
+}
+
 .Character-Grid-Dead {
+  background-color: #000;
+}
+
+.Character-Grid-Unknown {
+  background-color: #00f;
 }
 
 .Character-Image {
