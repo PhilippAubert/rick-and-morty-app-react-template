@@ -1,3 +1,9 @@
+.Title {
+  text-align: center;
+  font-size: 8vw;
+  margin-top: 60px;
+}
+
 .Single-Character-Frame-Parent {
   display: flex;
   justify-content: center;

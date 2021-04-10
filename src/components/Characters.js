@@ -30,13 +30,11 @@ export default function Characters() {
     return characters.map((character) => {
       const { id, name, image } = character;
       return (
-        <div className="Character-Grid-Parent">
-          <div className="Character-Grid" key={id}>
-            <Link to={`/character/${id}`}>
-              <img className="Character-Image" src={image} alt={name} />
-              <h3 className="Character-Text">{name}</h3>
-            </Link>
-          </div>
+        <div className="Character-Grid" key={id}>
+          <Link to={`/character/${id}`}>
+            <img className="Character-Image" src={image} alt={name} />
+            <h3 className="Character-Text">{name}</h3>
+          </Link>
         </div>
       );
     });
@@ -44,8 +42,8 @@ export default function Characters() {
 
   return (
     <div className="Viewport">
-      <h3>All Rick and Morty Characters</h3>
-      <section>{createCharacters()}</section>
+      <h3 className="Title">All Rick and Morty Characters</h3>
+      <section className="Character-Grid-Parent">{createCharacters()}</section>
       <button className="MoreButton" onClick={handleLoadMore}>
         {" "}
         Load More{" "}
