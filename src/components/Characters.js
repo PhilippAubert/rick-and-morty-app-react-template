@@ -28,15 +28,24 @@ export default function Characters() {
 
   function createCharacters() {
     return characters.map((character) => {
-      const { id, name, image } = character;
+      const { id, name, image, status } = character;
       return (
-        <div className="Character-Grid" key={id}>
-          <Link to={`/character/${id}`}>
-            <figure>
+        <div key={id} className="Character-Grid">
+          <div
+            key={id}
+            className={
+              status === "Alive"
+                ? "Character-Grid-Alive"
+                : status === "Dead"
+                ? "Character-Grid-Dead"
+                : "Character-Grid-Unknown"
+            }
+          >
+            <Link to={`/character/${id}`}>
               <img className="Character-Image" src={image} alt={name} />
-              <figcaption className="Character-Text">{name}</figcaption>
-            </figure>
-          </Link>
+              <h3 className="Character-Text">{name}</h3>
+            </Link>
+          </div>
         </div>
       );
     });
@@ -44,8 +53,8 @@ export default function Characters() {
 
   return (
     <div className="Viewport">
-      <h3>All Rick and Morty Characters</h3>
-      <section>{createCharacters()}</section>
+      <h3 className="Title">All Rick and Morty Characters</h3>
+      <section className="Character-Grid-Parent">{createCharacters()}</section>
       <button className="MoreButton" onClick={handleLoadMore}>
         {" "}
         Load More{" "}

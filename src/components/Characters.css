@@ -2,33 +2,57 @@
   padding: 2%;
   background-color: orange;
   border-radius: 4px 4px 4px 4px;
-  height: 50px;
-  margin-left: 40%;
+  margin-left: 35%;
+  margin-top: 20px;
+  font-size: 5vw;
 }
 
-.Headline-Text {
-  font-size: 20px;
-  text-align: center;
+.Title {
+  font-size: 5vh;
+}
+
+.Character-Grid-Parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .Character-Grid {
-  width: 45%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: start;
-  flex-wrap: wrap;
+  border: 1px solid #00f;
+  border-radius: 15px;
+  margin: 3%;
+}
+
+.Character-Grid-Alive {
+  background-color: #0f0;
+  border-radius: 15px;
+}
+
+.Character-Grid-Dead {
+  background-color: #000;
+  border-radius: 15px;
+}
+
+.Character-Grid-Unknown {
+  background-color: #00f;
+  border-radius: 15px;
 }
 
 .Character-Image {
-  height: 130px;
-  width: 130px;
+  width: 40vw;
+  border-radius: 15px;
 }
 
 .Character-Text {
-  font-size: 15px;
-  width: 100px;
-  color: #0f0;
+  color: #f00;
+  font-size: 3vw;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 a {
