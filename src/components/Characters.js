@@ -1,7 +1,6 @@
 import "./Characters.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import CharactersId from "./CharactersId.js";
 
 export default function Characters() {
   const [characters, setCharacters] = useState([]);
@@ -31,8 +30,8 @@ export default function Characters() {
     return characters.map((character) => {
       const { id, name, image } = character;
       return (
-        <div class="Character-Grid" key={id}>
-          <Link onClick={CharactersId} to={`/characters/${id}`}>
+        <div className="Character-Grid" key={id}>
+          <Link to={`/character/${id}`}>
             <figure>
               <img className="Character-Image" src={image} alt={name} />
               <figcaption className="Character-Text">{name}</figcaption>
