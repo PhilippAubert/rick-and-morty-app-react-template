@@ -1,8 +1,20 @@
 .App {
-  height: 100vh;
   display: grid;
-  place-items: center;
+  grid-template-rows: 100px auto 100px;
   color: #04b1c5;
   background-color: #111440;
   font-size: 2em;
+}
+
+.HeaderBox {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Top-Menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

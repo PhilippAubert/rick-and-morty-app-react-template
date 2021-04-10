@@ -1,0 +1,26 @@
+.LandingPage {
+  display: flex;
+  justify-content: center;
+}
+
+.Headline {
+  font-size: 19px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Main-Grid {
+  grid-row: 2/3;
+  margin-bottom: 22px;
+}
+
+.Wallpaper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+}
