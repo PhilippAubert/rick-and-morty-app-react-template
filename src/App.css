@@ -1,12 +1,13 @@
 .App {
   display: grid;
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: 20vh 60vh 20vh;
   color: #04b1c5;
   background-color: #111440;
+  overflow-y: scroll;
 }
 
 .HeaderBox {
-  margin-top: 40px;
+  margin-top: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;

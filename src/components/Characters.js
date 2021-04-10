@@ -28,17 +28,26 @@ export default function Characters() {
 
   function createCharacters() {
     return characters.map((character) => {
-      const { id, name, image,status } = character;
+      const { id, name, image, status } = character;
       return (
-        <div className="Character-Grid">
-          <div key={id} className={status === "Alive" ? "Character-Grid-Alive" : status === "Dead" ? "Character-Grid-Dead" : status === "Unknown" ? "Character-Grid-Unknown"}>
+        <div key={id} className="Character-Grid">
+          <div
+            key={id}
+            className={
+              status === "Alive"
+                ? "Character-Grid-Alive"
+                : status === "Dead"
+                ? "Character-Grid-Dead"
+                : "Character-Grid-Unknown"
+            }
+          >
             <Link to={`/character/${id}`}>
               <img className="Character-Image" src={image} alt={name} />
               <h3 className="Character-Text">{name}</h3>
             </Link>
           </div>
         </div>
-      );å
+      );
     });
   }
 

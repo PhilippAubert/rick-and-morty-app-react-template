@@ -20,14 +20,24 @@ export default function CharactersId() {
   return (
     <div className="Single-Character-Frame-Parent">
       <div className="Single-Character-Frame">
-        <h3 className="Headline">{character.name}</h3>
-        <img className="Photo" src={character.image} alt={character.name} />
-        <p className="Liner-Notes">{character.status}</p>
-        <p className="Liner-Notes">{character.species}</p>
-        <button className="Go-Back-Button" onClick={() => history.goBack()}>
-          {" "}
-          Go Back{" "}
-        </button>
+        <div
+          className={
+            character.status === "Alive"
+              ? "Single-Character-Frame-Alive"
+              : character.status === "Dead"
+              ? "Single-Character-Frame-Dead"
+              : "Single-Character-Frame-Unknown"
+          }
+        >
+          <h3 className="Headline">{character.name}</h3>
+          <img className="Photo" src={character.image} alt={character.name} />
+          <p className="Liner-Notes">{character.status}</p>
+          <p className="Liner-Notes">{character.species}</p>
+          <button className="Go-Back-Button" onClick={() => history.goBack()}>
+            {" "}
+            Go Back{" "}
+          </button>
+        </div>
       </div>
     </div>
   );

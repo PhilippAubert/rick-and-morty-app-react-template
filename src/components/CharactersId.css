@@ -20,6 +20,37 @@
   width: 50vw;
 }
 
+.Single-Character-Frame-Alive {
+  background-color: #0f0;
+  color: #000;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.Single-Character-Frame-Dead {
+  background-color: #000;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.Single-Character-Frame-Unknown {
+  background-color: #00f;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  width: 50vw;
+}
+
 .Photo {
   width: 40vw;
   margin-bottom: 10px;
