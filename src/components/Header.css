@@ -2,7 +2,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 auto;
 }
 
 .HeaderLogo {
@@ -12,4 +11,5 @@
 
 .Header-Grid {
   grid-row: 1/2;
+  margin-bottom: 30px;
 }

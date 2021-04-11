@@ -1,0 +1,55 @@
+.SearchFrame {
+  background: #000;
+  padding: 4%;
+  position: fixed;
+  top: 16%;
+}
+
+.Filter {
+  display: flex;
+  justify-content: space-around;
+}
+
+.SubmitForm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+}
+
+.LabelForName {
+  margin-right: 10px;
+}
+
+.FilterArea {
+  margin-right: 10px;
+  border-radius: 3px;
+  border: 1px solid #0f0;
+  background-color: blueviolet;
+  color: #0f0;
+}
+
+.LabelForStatus {
+  margin-right: 10px;
+}
+
+.SelectArea {
+  margin-right: 10px;
+  border: 1px solid #0f0;
+  border-radius: 3px;
+  background-color: blueviolet;
+  color: #0f0;
+}
+
+.SearchButton {
+  background-color: blueviolet;
+  border-radius: 3px;
+  border: 2px solid #0f0;
+  color: #0f0;
+  font-size: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3px auto;
+}

@@ -3,18 +3,27 @@
   grid-template-rows: 20vh 60vh 20vh;
   color: #04b1c5;
   background-color: #111440;
-  overflow-y: scroll;
 }
 
 .HeaderBox {
-  margin-top: 40vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .Top-Menu {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.Main-Grid {
+  margin-top: 5px;
+  grid-row: 2/3;
+  overflow-y: scroll;
+}
+
+.Footer-Grid {
+  grid-row: 3/4;
 }
