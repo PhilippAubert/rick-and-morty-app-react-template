@@ -6,7 +6,6 @@
 }
 
 .HeaderBox {
-  margin-top: 40vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,9 +15,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .Main-Grid {
+  margin-top: 5px;
   grid-row: 2/3;
   overflow-y: scroll;
+}
+
+.Footer-Grid {
+  grid-row: 3/4;
 }

@@ -7,8 +7,9 @@
   font-size: 5vw;
 }
 
-.Title {
-  font-size: 5vh;
+.Title h3 {
+  font-size: 3vh;
+  margin: 0 auto;
 }
 
 .Character-Grid-Parent {

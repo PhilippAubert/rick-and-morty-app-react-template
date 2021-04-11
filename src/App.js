@@ -34,11 +34,10 @@ function App() {
           </Switch>
         </main>
 
-        <footer>
+        <footer className="Footer-Grid">
           <Footer />
         </footer>
       </div>
-      ;
     </Router>
   );
 }
