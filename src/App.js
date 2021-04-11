@@ -34,7 +34,7 @@ function App() {
           </Switch>
         </main>
 
-        <footer className="Footer-Grid">
+        <footer>
           <Footer />
         </footer>
       </div>

@@ -3,7 +3,9 @@ import RickandMortylogo from "../imgs/RickandMortylogo.jpg";
 
 function Footer() {
   return (
-    <img className="Footer-Pic" src={RickandMortylogo} alt="Rick and Morty" />
+    <div className="Footer-Grid">
+      <img className="Footer-Pic" src={RickandMortylogo} alt="Rick and Morty" />
+    </div>
   );
 }
 
